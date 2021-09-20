@@ -1,0 +1,291 @@
+
+aslam@DESKTOP-836JFEP MINGW64 ~
+$ git --version
+git version 2.33.0.windows.2
+
+aslam@DESKTOP-836JFEP MINGW64 ~
+$ cd D:\git_path
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path
+$ cd :d:
+bash: cd: :d:: No such file or directory
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path
+$ cd d:
+
+aslam@DESKTOP-836JFEP MINGW64 /d
+$ cd D:\git_path
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path
+$ cd d
+bash: cd: d: No such file or directory
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path
+$ git init
+Initialized empty Git repository in D:/git_path/.git/
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (master)
+$ git add aslam.txt
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (master)
+$ git config global user.username aslamrp07
+error: key does not contain a section: global
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (master)
+$ git commit "aslam"
+error: pathspec 'aslam' did not match any file(s) known to git
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (master)
+$ git commit -m"aslam"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'aslam@DESKTOP-836JFEP.(none)')
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (master)
+$ git config --global user.username aslamrp07
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (master)
+$ git remote add origin https://github.com/aslamrp07/aslamrp07.git
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (master)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/aslamrp07/aslamrp07.git'
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (master)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/aslamrp07/aslamrp07.git'
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (master)
+$
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (master)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/aslamrp07/aslamrp07.git'
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (master)
+$ git branch -M main
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/aslamrp07/aslamrp07.git'
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/aslamrp07/aslamrp07.git'
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ ^C
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ git commit -m "feat: Create index.html"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'aslam@DESKTOP-836JFEP.(none)')
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ ^C
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ git config --global user.email aslamrp07@gmail.com
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ git config --global user.username aslamrp07
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ git commit -m "feat: Create index.html"
+[main (root-commit) 1075abc] feat: Create index.html
+ 1 file changed, 1 insertion(+)
+ create mode 100644 aslam.txt
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/aslamrp07/aslamrp07.git'
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ git commit -m "feat: Create index.html"
+On branch main
+nothing to commit, working tree clean
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 225 bytes | 225.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/aslamrp07/aslamrp07.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ git push -u origin main
+Everything up-to-date
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ git commit -m "feat: Create index.html"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   aslam.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ git commit "aslam"
+error: pathspec 'aslam' did not match any file(s) known to git
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ git push -u origin main
+Everything up-to-date
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ git pull upstream master
+fatal: 'upstream' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ git commit -m "asasa"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   aslam.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ git commit -a "asasa"
+fatal: paths 'asasa ...' with -a does not make sense
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ git push
+Everything up-to-date
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ git commit -a "asasa"
+fatal: paths 'asasa ...' with -a does not make sense
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ git pull upstream master
+fatal: 'upstream' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ git push -u origin main
+Everything up-to-date
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ git commit -m "feat: Create index.html"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   aslam.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ git commit -a "asasssdsa"
+fatal: paths 'asasssdsa ...' with -a does not make sense
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/aslamrp07/aslamrp07.git'
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ git remote add origin https://github.com/aslamrp07/aslamrp07.git
+error: remote origin already exists.
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ git add aslam.txt
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ git commit -a "asasssdsa"
+fatal: paths 'asasssdsa ...' with -a does not make sense
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ git commit -m "asasssdsa"
+[main f1a2839] asasssdsa
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/aslamrp07/aslamrp07.git'
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$ git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 256 bytes | 256.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/aslamrp07/aslamrp07.git
+   1075abc..f1a2839  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+aslam@DESKTOP-836JFEP MINGW64 /d/git_path (main)
+$
